@@ -13,4 +13,5 @@ const Header = () =>
     </div>
   </header>
 
-export default withRouter(Header)
+// export default withRouter(Header)
+export default Header

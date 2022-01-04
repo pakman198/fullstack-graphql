@@ -1,17 +1,17 @@
-import { Switch, Route } from 'react-router-dom'
-import React, {Fragment} from 'react'
+import React from 'react'
+import { Switch, Route, BrowserRouter, Routes } from 'react-router-dom'
 import Header from './Header'
 import Pets from '../pages/Pets'
 
 const App = () => (
-  <Fragment>
+  <BrowserRouter>
     <Header />
     <div>
-      <Switch>
-        <Route exact path="/" component={Pets} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Pets />} />
+      </Routes>
     </div>
-  </Fragment>
+  </BrowserRouter>
 )
 
 export default App
